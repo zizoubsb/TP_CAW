@@ -1,0 +1,17 @@
+
+
+<Group position={'apart'}>
+<Text weight={'bold'}>{Blog.title}</Text>
+
+<img className='likeIcon' src="/assets/like.png" onClick={() => likeHandler(index)} alt="" />
+
+</Group>
+
+<Group position={'apart'}>
+<Text color={'dimmed'} size={'md'} mt={'sm'}>
+{Blog.summary2
+	? Blog.summary2
+	: 'No '}
+</Text>
+<span className="postLikeCounter">Like {likes}</span> 
+</Group>
